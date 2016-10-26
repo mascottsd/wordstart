@@ -22,8 +22,8 @@ if (!strlen($findCh)) {
 	die("[]");
 }
 // https://raw.githubusercontent.com/dwyl/english-words/master/words.txt
-// "../words.txt"
-$fname = "/usr/share/dict/words";
+$fname = "./words.txt";
+//$fname = "/usr/share/dict/words";
 $myfile = fopen($fname, "r") or die("Unable to open file!");
 $maxMatches = 100;
 $cnt = 0;
