@@ -48,7 +48,7 @@ app.controller('jsCtrl', function ($scope, $http, $timeout) {
 	}
 	//---- DefineWord
 	$scope.DefineWord = function() {
-		var url = "https://glosbe.com/gapi/translate?from=eng&dest=fr&format=json&phrase="+ $scope.txt +"&pretty=true";
+		var url = "http://glosbe.com/gapi/translate?from=eng&dest=fr&format=json&pretty=true&phrase="+ $scope.txt;
 		$http.get(url).success(function(data) {
 			console.log(data);
 		});
