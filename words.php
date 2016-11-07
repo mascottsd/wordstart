@@ -16,7 +16,7 @@ function endsWith($haystack, $needle)
 }
 
 
-$findCh = $_REQUEST['q'];
+$findCh = $_REQUEST['w'];
 $matches = array();
 if (!strlen($findCh)) {
 	die("[]");
